@@ -1,0 +1,43 @@
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #EAC926;;
+}
+
+.products {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+    font-size: 12px;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.cta {
+    justify-content: center;
+    align-items: center;
+}
+.price {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+Titulares (Basado en tu última visita/Ofertas): 24px
+Descripciones: 16px
