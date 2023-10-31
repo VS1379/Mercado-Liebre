@@ -3,7 +3,23 @@ header {
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #EAC926;;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.search-bar p {
+    color: gray;
+}
+
+.search-bar{
+    background-color: white;
+    width: 70%;
+    border: solid 2px gray;
 }
 
 .products {
@@ -14,12 +30,14 @@ body{
     font-size: 12px;
 }
 
-main {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+.burger-menu {
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
 .cta {
-    justify-content: center;
+    text-align: center;
     align-items: center;
 }
 .price {
@@ -39,5 +57,8 @@ main {
     font-size: 16px;
 }
 
-Titulares (Basado en tu última visita/Ofertas): 24px
-Descripciones: 16px
+.footer-page {
+    font-size: 24px;
+    text-align: center;
+}
+
