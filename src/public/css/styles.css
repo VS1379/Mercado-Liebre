@@ -1,19 +1,28 @@
 header {
   font-family: "Roboto", sans-serif;
   background-color: #eac926;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: grey;
 }
 
 main {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
 }
 
 footer {
   background-color: white;
+  box-sizing: border-box;
 }
 
 header .logo-mercado-liebre {
@@ -93,8 +102,37 @@ header .logo-mercado-liebre {
   padding: 10px;
   border-radius: 5px;
 }
-.products {
+
+.last-visit {
+  background-color: grey;
+}
+
+.product {
+  background-color: white;
   font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+.product i {
+  width: 25px;
+  height: 25px;
+  background-color: violet;
+}
+
+.product i{
+  border-radius: 20px solid #2ac328;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.product div {
+  border: 15px solid transparent;
+  border-top: 1px solid #ebebeb;
+}
+
+.product img{
+  height: 100%;
+  width: 100%;
 }
 
 .price {
@@ -147,4 +185,12 @@ header .logo-mercado-liebre {
   margin-bottom: 20px;
   font-size: small;
   text-align: left;
+}
+
+#circle {
+  background: white;
+  border-radius: 100%;
+  border: 2px solid #2ac328;
+  width: 40px;
+  height: 40px;
 }
