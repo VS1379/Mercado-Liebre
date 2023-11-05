@@ -146,20 +146,15 @@ div.burger-menu {
   padding: 10px;
 }
 
+div.product {
+  display: flex;
+  flex-direction: column;
+}
+
 .product {
   background-color: white;
   font-family: "Roboto", sans-serif;
   margin: 10px;
-}
-
-.product i {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.product div {
-  border: 15px solid transparent;
-  border-top: 1px solid #ebebeb;
 }
 
 .product img {
@@ -167,15 +162,45 @@ div.burger-menu {
   width: 100%;
 }
 
-.price {
+.product div {
+  border: 15px solid transparent;
+  border-top: 2px solid #ebebeb;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.product i {
+  /* margin-top: 10px;
+  margin-left: 10px; */
+  position: relative;
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.price {
   font-size: 18px;
+  width: 30%;
 }
 
 .discount {
-  margin-top: 0px;
   font-size: 16px;
   color: green;
+  width: 70%;
 }
 
 .title {
