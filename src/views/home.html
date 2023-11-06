@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- enlazado hoja de css -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- Normaliza para todos los nav -->
+    <link rel="stylesheet" href="/css/normalize.css">
     <!-- Fuente de google roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,19 +25,21 @@
         <div class="search-bar-button">
             <div class="search-bar">
                 <p> Buscar productos, marcas </p>
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </div>
-            <div class="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></div>
         </div>
         <div class="cta">
             <i class="fa-solid fa-hand-holding-dollar"></i>
             <p> Cómpra en cuotas y sin tarjetas de credito </p>
         </div>
         <nav class="nav-bar">
-            <ul>
+            <ul class="nav">
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Tiendas Oficiales</a></li>
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="nav-user">
                 <li><a href="">Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
                 <li><a href="">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
@@ -46,7 +50,7 @@
         </div>
     </header>
     <main class="products">
-
+        <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
         <section class="last-visit">
             <h1 class="title">Basado en tu última visita</h1>
 
