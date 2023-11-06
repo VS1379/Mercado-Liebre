@@ -322,7 +322,6 @@ div.product {
     background: grey;
   }
 
-
   .cta {
     margin-top: 6%;
     width: 33%;
@@ -358,35 +357,21 @@ div.product {
     flex-wrap: wrap;
   }
 
-  .product {
-    width: 40%;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .product div {
+  div.product {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    width: 40%;
   }
 
   .price {
-    display: flex;
-    width: 25%;
-    height: 20px;
+    width: 30%;
   }
 
   .discount {
-    display: flex;
-    width: 75%;
-    height: 20px;
+    width: 70%;
   }
 
-  .product p {
-    width: 100%;
-  }
 }
-/* 
+
 @media (min-width: 1024px) {
 
   header {
@@ -463,26 +448,18 @@ div.product {
     flex-wrap: wrap;
   }
 
-  .product {
+  div.product {
+    display: flex;
     width: 20%;
-    align-items: center;
   }
 
   .price {
-    display: flex;
-    flex-wrap: nowrap;
     width: 30%;
   }
 
   .discount {
-    display: flex;
-    align-self: center;
     width: 70%;
   }
-
-  .product p {
-    width: 100%;
-  }
-} */
+}
 
 /* para testo:   border: dotted 2px red; */
