@@ -252,9 +252,9 @@ div.product {
   margin-right: 30px;
 }
 
-.footer-page .Copyright {
-  margin-top: 50px;
-  margin-left: 10px;
+.Copyright {
+  padding: 10px;
+  padding-top: 30px;
   font-size: small;
   text-align: left;
 }
@@ -389,9 +389,33 @@ div.product {
   }
 
   header .logo-mercado-liebre {
-    padding-top: 10px;
-    width: 30%;
+    padding-top: 15px;
+    width: 25%;
   }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  footer .footer-page-Copyright{
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .Copyright {
+    padding-top: 3em;
+  }
+
+  .footer-page{
+    margin: 0px;
+    width: 30%;
+    height: 8em;
+  }
+  
 
   .search-bar-button {
     margin: 0px;
@@ -403,20 +427,22 @@ div.product {
 
   .search-bar p {
     text-wrap: nowrap;
-    padding: 2%;
+    padding: 0.5em;
   }
 
   .search-bar i {
     border: solid 0px grey;
-    border-radius: 0px;
-    margin-left: 2%;
-    background: grey;
+    background: white;
+    display: flex;
+    justify-self: flex-end;
   }
 
   .cta {
-    margin-top: 4%;
+    margin-top: 3em;
     width: 30%;
     display: flex;
+    justify-content: flex-end;
+    padding-right: 5em;
   }
 
   .cta p {
@@ -424,7 +450,7 @@ div.product {
   }
 
   .nav-bar {
-    padding: 2%;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
     width: 100%;
