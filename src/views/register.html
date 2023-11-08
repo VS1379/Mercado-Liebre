@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="logo-mercado-liebre">
-            <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="300" height="300"></img>
+            <a href="/home"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="300" height="300"></img></a>
         </div>
         <div class="search-bar-button">
             <div class="search-bar">
@@ -50,6 +50,25 @@
         </div>
     </header>
     <main>
+        <form action="/register" method="post">
+                <input type="text" name="name-lastname">
+                <input type="text" name="user">
+                <input type="email" name="email">
+                <input type="date" name="birthday">
+                <input type="address" name="address">
+                <option value="comprar" selected>Comprar</option>
+                <option value="vender">Vender</option>
+                <option value="electro">Electro</option>
+                <option value="moda">Moda</option>
+                <option value="hogar">Hogar</option>
+                <option value="jugueteria">Jugueteria</option>
+                <option value="vidaSana">Fitness</option>
+                <input type="file" name="avatar" accept=".jpg, .png" multiple>
+                <input type="password" name="password">
+                <input type="password" name="password">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+        </form>
     </main>
     <footer>
         <div class="footer-page">
@@ -73,7 +92,7 @@
                 porque estás siempre protegid@.</p>
         </div>
 
-        <div class="footer-page">
+        <div class="footer-page-Copyright">
             <h3 class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
         </div>
     </footer>
