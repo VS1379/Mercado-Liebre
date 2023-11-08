@@ -20,7 +20,8 @@
 <body>
     <header>
         <div class="logo-mercado-liebre">
-            <a href="/home"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="300" height="300"></img></a>
+            <a href="/home"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="300"
+                    height="300"></img></a>
         </div>
         <div class="search-bar-button">
             <div class="search-bar">
@@ -40,8 +41,8 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
             <ul class="nav-user">
-                <li><a href="">Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
-                <li><a href="">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="register">Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+                <li><a href="login">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="">Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -51,23 +52,38 @@
     </header>
     <main>
         <form action="/register" method="post">
-                <input type="text" name="name-lastname">
-                <input type="text" name="user">
-                <input type="email" name="email">
-                <input type="date" name="birthday">
-                <input type="address" name="address">
-                <option value="comprar" selected>Comprar</option>
-                <option value="vender">Vender</option>
-                <option value="electro">Electro</option>
-                <option value="moda">Moda</option>
-                <option value="hogar">Hogar</option>
-                <option value="jugueteria">Jugueteria</option>
-                <option value="vidaSana">Fitness</option>
+            <label for="name-lastname">Nombre Completo:</label>
+            <input type="text" name="name-lastname">
+            <label for="username">Usuario</label>
+            <input type="text" name="username">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="birthday">Fecha de Nacimiento</label>
+            <input type="date" name="birthday">
+            <label for="address">Direccion</label>
+            <input type="address" name="address">
+            <label for="comprarVender">Tipo de perfil
+                <select name="comprarVender">
+                    <option value="comprar" selected>Comprar</option>
+                    <option value="vender">Vender</option>
+                </select>
+            </label>
+            <label for="interest">Categoria
+                <input type="checkbox" name="electro">Electro</input>
+                <input type="checkbox" name="moda">Moda</input>
+                <input type="checkbox" name="hogar">Hogar</input>
+                <input type="checkbox" name="jugueteria">Jugueteria</input>
+                <input type="checkbox" name="vidaSana">Fitness</input>
+            </label>
+            <label for="avatar">Sube tu avatar
                 <input type="file" name="avatar" accept=".jpg, .png" multiple>
+            </label>
+            <label for="password">Contraseña
                 <input type="password" name="password">
                 <input type="password" name="password">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+            </label>
+            <button type="submit"><a href="/home">Enviar</a></button>
+            <button type="reset">Borrar</button>
         </form>
     </main>
     <footer>
