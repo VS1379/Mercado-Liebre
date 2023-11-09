@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- enlazado hoja de css -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
     <!-- Normaliza para todos los nav -->
     <link rel="stylesheet" href="/css/normalize.css">
     <!-- Fuente de google roboto -->
@@ -52,13 +53,11 @@
     </header>
     <main>
         <form action="/login" method="post">
-            <label for="username">Nombre de Usuario
-                <input type="text" name="username" id="username">
-            </label>
-            <label for="password">Contraseña
-                <input type="password" name="password" id="password">
-            </label>
-            <button type="submit"><a href="/home">Enviar</a></button>
+            <label for="username" id="label-username">Nombre de Usuario</label>
+            <input type="text" name="username" id="input-username">
+            <label for="password" id="label-password">Contraseña</label>
+            <input type="password" name="password" id="input-password">
+            <button type="submit" id="button-login"><a href="/home">Ingresar</a></button>
         </form>
     </main>
     <footer>

@@ -1,0 +1,44 @@
+form {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+}
+
+#label-username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+#input-username {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#label-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+#input-password {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#button-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  width: 20%;
+}
