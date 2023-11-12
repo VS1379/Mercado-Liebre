@@ -52,13 +52,21 @@
         </div>
     </header>
     <main>
-        <form action="/login" method="post">
-            <label for="username" id="label-username">Nombre de Usuario</label>
-            <input type="text" name="username" id="input-username">
-            <label for="password" id="label-password">Contraseña</label>
-            <input type="password" name="password" id="input-password">
-            <button type="submit" id="button-login"><a href="/home">Ingresar</a></button>
-        </form>
+        <div class="div-form">
+            <form action="/login" method="post">
+                <p id="p-username">
+                    <label for="username" id="label-username">Usuario</label>
+                    <input type="text" name="username" id="input-username">
+                </p>
+                <p id="p-password">
+                    <label for="password" id="label-password">Contraseña</label>
+                    <input type="password" name="password" id="input-password">
+                </p>
+
+                <p id="p-login"><button type="submit" id="button-login"><a href="/home"
+                            id="a-button-login">Ingresar</a></button></p>
+            </form>
+        </div>  
     </main>
     <footer>
         <div class="footer-page">
