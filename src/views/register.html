@@ -51,37 +51,56 @@
         </div>
     </header>
     <main>
-        <form action="/register" method="post">
-            <label for="name-lastname">Nombre Completo:</label>
-            <input type="text" name="name-lastname">
-            <label for="username">Usuario</label>
-            <input type="text" name="username">
-            <label for="email">Email</label>
-            <input type="email" name="email">
-            <label for="birthday">Fecha de Nacimiento</label>
-            <input type="date" name="birthday">
-            <label for="address">Direccion</label>
-            <input type="address" name="address">
-            <label for="comprarVender">Tipo de perfil
-                <select name="comprarVender">
-                    <option value="comprar" selected>Comprar</option>
-                    <option value="vender">Vender</option>
-                </select>
-            </label>
-            <label for="interest">Categoria
-                <input type="checkbox" name="electro">Electro</input>
-                <input type="checkbox" name="moda">Moda</input>
-                <input type="checkbox" name="hogar">Hogar</input>
-                <input type="checkbox" name="jugueteria">Jugueteria</input>
-                <input type="checkbox" name="vidaSana">Fitness</input>
-            </label>
-            <label for="avatar">Sube tu avatar
-                <input type="file" name="avatar" accept=".jpg, .png" multiple>
-            </label>
-            <label for="password">Contraseña
-                <input type="password" name="password">
-                <input type="password" name="password">
-            </label>
+        <form action="/re|gister" method="post">
+            <p id="p-name-lastname">
+                <label for="name-lastname">Nombre Completo:</label>
+                <input type="text" name="name-lastname">
+            </p>
+            <p id="p-username">
+                <label for="username">Usuario</label>
+                <input type="text" name="username">
+            </p>
+            <p id="p-email">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </p>
+            <p id="p-birthday">
+                <label for="birthday">Fecha de Nacimiento</label>
+                <input type="date" name="birthday">
+            </p>
+            <p id="p-address">
+                <label for="address">Direccion</label>
+                <input type="address" name="address">
+            </p>
+            <p id="p-comprarVender">
+                <label for="comprarVender">Tipo de perfil
+                    <select name="comprarVender">
+                        <option value="comprar" selected>Comprar</option>
+                        <option value="vender">Vender</option>
+                    </select>
+                </label>
+            </p>
+            <p id="p-interest">
+                <label for="interest">Categoria
+                    <input type="checkbox" name="electro">Electro</input>
+                    <input type="checkbox" name="moda">Moda</input>
+                    <input type="checkbox" name="hogar">Hogar</input>
+                    <input type="checkbox" name="jugueteria">Jugueteria</input>
+                    <input type="checkbox" name="vidaSana">Fitness</input>
+                </label>
+            </p>
+            <p id="p-avatar">
+                <label for="avatar">Sube tu avatar
+                    <input type="file" name="avatar" accept=".jpg, .png" multiple>
+                </label>
+            </p>
+            <p id="p-password">
+                <label for="password">Contraseña
+                    <input type="password" name="password">
+                    <input type="password" name="password">
+                </label>
+            </p>
+
             <button type="submit"><a href="/home">Enviar</a></button>
             <button type="reset">Borrar</button>
         </form>
