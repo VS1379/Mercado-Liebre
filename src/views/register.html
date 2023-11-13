@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- enlazado hoja de css -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
     <!-- Normaliza para todos los nav -->
     <link rel="stylesheet" href="/css/normalize.css">
     <!-- Fuente de google roboto -->
@@ -51,59 +52,60 @@
         </div>
     </header>
     <main>
-        <form action="/re|gister" method="post">
-            <p id="p-name-lastname">
-                <label for="name-lastname">Nombre Completo:</label>
-                <input type="text" name="name-lastname">
-            </p>
-            <p id="p-username">
-                <label for="username">Usuario</label>
-                <input type="text" name="username">
-            </p>
-            <p id="p-email">
-                <label for="email">Email</label>
-                <input type="email" name="email">
-            </p>
-            <p id="p-birthday">
-                <label for="birthday">Fecha de Nacimiento</label>
-                <input type="date" name="birthday">
-            </p>
-            <p id="p-address">
-                <label for="address">Direccion</label>
-                <input type="address" name="address">
-            </p>
-            <p id="p-comprarVender">
-                <label for="comprarVender">Tipo de perfil
+        <div class="div-form">
+            <form action="/register" method="post">
+                <p class="p-form">
+                    <label for="name-lastname" class="label-form">Nombre Completo</label>
+                    <input type="text" name="name-lastname" class="input-form">
+                </p>
+                <p class="p-form">
+                    <label for="usernamex" class="label-form">Usuario</label>
+                    <input type="text" name="username" class="input-form">
+                </p>
+                <p class="p-form">
+                    <label for="email" class="label-form">Email</label>
+                    <input type="email" name="email" class="input-form">
+                </p>
+                <p class="p-form">
+                    <label for="birthday" class="label-form">Fecha de Nacimiento</label>
+                    <input type="date" name="birthday" class="input-form">
+                </p>
+                <p class="p-form">
+                    <label for="address" class="label-form">Direccion</label>
+                    <input type="address" name="address" class="input-form">
+                </p>
+                <p class="p-form">
+                    <label for="comprarVender" class="label-form">Tipo de perfil</label>
                     <select name="comprarVender">
                         <option value="comprar" selected>Comprar</option>
                         <option value="vender">Vender</option>
                     </select>
-                </label>
-            </p>
-            <p id="p-interest">
-                <label for="interest">Categoria
-                    <input type="checkbox" name="electro">Electro</input>
-                    <input type="checkbox" name="moda">Moda</input>
-                    <input type="checkbox" name="hogar">Hogar</input>
-                    <input type="checkbox" name="jugueteria">Jugueteria</input>
-                    <input type="checkbox" name="vidaSana">Fitness</input>
-                </label>
-            </p>
-            <p id="p-avatar">
-                <label for="avatar">Sube tu avatar
-                    <input type="file" name="avatar" accept=".jpg, .png" multiple>
-                </label>
-            </p>
-            <p id="p-password">
-                <label for="password">Contraseña
-                    <input type="password" name="password">
-                    <input type="password" name="password">
-                </label>
-            </p>
-
-            <button type="submit"><a href="/home">Enviar</a></button>
-            <button type="reset">Borrar</button>
-        </form>
+                </p>
+                <p id="p-interest">
+                    <label for="interest" class="label-form">Categoria</label>
+                <ul style="list-style: none">
+                    <li><input type="checkbox" name="electro">Electro</input></li>
+                    <li><input type="checkbox" name="moda">Moda</input></li>
+                    <li><input type="checkbox" name="hogar">Hogar</input></li>
+                    <li><input type="checkbox" name="jugueteria">Jugueteria</input></li>
+                    <li><input type="checkbox" name="vidaSana">Fitness</input></li>
+                </ul>
+                </p>
+                <p id="p-avatar">
+                    <label for="avatar" class="label-form">Sube tu avatar</label>
+                    <input type="file" name="avatar" accept=".jpg, .png" multiple id="input-select-avatar">
+                </p>
+                <p class="p-form">
+                    <label for="password" class="label-form">Contraseña</label>
+                    <input type="password" name="password" class="input-form">
+                    <input type="password" name="password" class="input-form">
+                </p>
+                <p id="form-buttons">
+                    <button type="submit" id="button-submit"><a href="/home" id="a-button-submit">Enviar</a></button>
+                    <button type="reset" id="button-reset">Borrar</button>
+                </p>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footer-page">

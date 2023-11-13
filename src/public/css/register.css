@@ -1,0 +1,141 @@
+.div-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.p-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.label-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.2em;
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0.2em;
+  border: solid grey 2px;
+  text-align: center;
+  padding: 2px;
+}
+
+#p-interest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0.5em;
+}
+
+#p-interest label {
+  text-decoration-color: black;
+  text-decoration-line: underline;
+}
+
+#p-avatar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#input-select-avatar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+#form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2em;
+  width: 100%;
+}
+
+#button-submit {
+  width: 30%;
+}
+
+#a-button-submit {
+  color: black;
+  text-decoration: none;
+}
+
+#button-reset {
+  width: 30%;
+}
+
+@media (min-width: 471px) and (max-width: 1024px) {
+  #input-select-avatar {
+    width: aut5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .div-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 49em;
+    border: solid grey 2px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .p-form {
+    width: 33%;
+  }
+
+  .input-form {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  #p-interest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1px;
+  }
+}
