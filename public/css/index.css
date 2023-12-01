@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+}
+
+
+.banner {
+  width: 100%;
+}
+
+.last-visit {
+  display: flex;
+  background-color: #ebebeb;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.product {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.product {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  width: 100%;
+}
+
+.product img {
+  height: 100%;
+  width: 100%;
+}
+
+.product div {
+  border: 15px solid transparent;
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.product i {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.price {
+  font-size: 18px;
+  width: 25%;
+}
+
+.discount {
+  font-size: 16px;
+  color: green;
+  width: 75%;
+  align-self: center;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#circle {
+  background: white;
+  border-radius: 100%;
+  border: 2px solid #2ac328;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 470px) {
+  div .product {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 471px) and (max-width: 1024px) {
+
+  div.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  div.product {
+    display: flex;
+    width: 40%;
+  }
+
+  .price {
+    width: 30%;
+  }
+
+  .discount {
+    width: 70%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  div.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .last-visit {
+    justify-content: space-around;
+  }
+
+  .last-visit .title {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  div.product {
+    display: flex;
+    width: 20%;
+  }
+
+  .price {
+    width: 30%;
+  }
+
+  .discount {
+    width: 70%;
+  }
+}
+
+/* para testo:   border: dotted 2px red; */

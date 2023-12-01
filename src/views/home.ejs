@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--  Head  -->
+<%- include('./partials/head.ejs', {style:"index", title:"Home"}) %>
+
+    <body>
+
+        <!-- Header -->
+        <%- include('./partials/header.ejs') %>
+
+            <main class="products">
+                <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
+                <section class="last-visit">
+                    <h1 class="title">Basado en tu última visita</h1>
+
+                    <div class="product">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$6.770</p>
+                            <p class="discount">40% off</p>
+                            <p class="product">Cafetera Moulinex</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$230.000</p>
+                            <p class="discount">20% off</p>
+                            <p class="product">Mac Book Pro 2019</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$70.500</p>
+                            <p class="discount">10% off</p>
+                            <p class="product">Samsung Galaxy S10</p>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$23.200</p>
+                            <p class="discount">5% off</p>
+                            <p class="product">SmartTv Samsung 43"</p>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="last-visit">
+                    <h1 class="title">Ofertas</h1>
+
+                    <div class="product">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$6.770</p>
+                            <p class="discount">40% off</p>
+                            <p class="product">Cafetera Moulinex</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$230.000</p>
+                            <p class="discount">20% off</p>
+                            <p class="product">Mac Book Pro 2019</p>
+                        </div>
+
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$70.500</p>
+                            <p class="discount">10% off</p>
+                            <p class="product">Samsung Galaxy S10</p>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$23.200</p>
+                            <p class="discount">5% off</p>
+                            <p class="product">SmartTv Samsung 43"</p>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+
+            <!--footer-->
+            <%- include('./partials/footer.ejs') %>
+
+    </body>
+
+</html>

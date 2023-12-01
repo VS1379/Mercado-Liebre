@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<%- include('./partials/head.ejs', {style:"register", title:"Register"}) %>
+
+    <body>
+
+        <%- include('./partials/header.ejs') %>
+
+            <main>
+                <div class="div-form">
+                    <form action="/register" method="post">
+                        <p class="p-form">
+                            <label for="name-lastname" class="label-form">Nombre Completo</label>
+                            <input type="text" name="name-lastname" class="input-form">
+                        </p>
+                        <p class="p-form">
+                            <label for="usernamex" class="label-form">Usuario</label>
+                            <input type="text" name="username" class="input-form">
+                        </p>
+                        <p class="p-form">
+                            <label for="email" class="label-form">Email</label>
+                            <input type="email" name="email" class="input-form">
+                        </p>
+                        <p class="p-form">
+                            <label for="birthday" class="label-form">Fecha de Nacimiento</label>
+                            <input type="date" name="birthday" class="input-form">
+                        </p>
+                        <p class="p-form">
+                            <label for="address" class="label-form">Direccion</label>
+                            <input type="address" name="address" class="input-form">
+                        </p>
+                        <p class="p-form">
+                            <label for="comprarVender" class="label-form">Tipo de perfil</label>
+                            <select name="comprarVender">
+                                <option value="comprar" selected>Comprar</option>
+                                <option value="vender">Vender</option>
+                            </select>
+                        </p>
+                        <p id="p-interest">
+                            <label for="interest" class="label-form">Categoria</label>
+                        <ul style="list-style: none">
+                            <li><input type="checkbox" name="electro">Electro</input></li>
+                            <li><input type="checkbox" name="moda">Moda</input></li>
+                            <li><input type="checkbox" name="hogar">Hogar</input></li>
+                            <li><input type="checkbox" name="jugueteria">Jugueteria</input></li>
+                            <li><input type="checkbox" name="vidaSana">Fitness</input></li>
+                        </ul>
+                        </p>
+                        <p id="p-avatar">
+                            <label for="avatar" class="label-form">Sube tu avatar</label>
+                            <input type="file" name="avatar" accept=".jpg, .png" multiple id="input-select-avatar">
+                        </p>
+                        <p class="p-form">
+                            <label for="password" class="label-form">Contraseña</label>
+                            <input type="password" name="password" class="input-form" placeholder="Ingresar Contraseña">
+                            <input type="password" name="password" class="input-form"
+                                placeholder="Reingresar Contraseña">
+                        </p>
+                        <p id="form-buttons">
+                            <button type="submit" id="button-submit"><a href="/home"
+                                    id="a-button-submit">Enviar</a></button>
+                            <button type="reset" id="button-reset">Borrar</button>
+                        </p>
+                    </form>
+                </div>
+            </main>
+
+            <%- include('./partials/footer.ejs')%>
+
+    </body>
+
+</html>
