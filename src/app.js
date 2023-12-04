@@ -8,9 +8,11 @@ const productRouter = require("./routes/product-router");
 const port = process.env.PORT || 3001;
 const app = express();
 
-app.use(express.static(path.join(__dirname, "../", "public")));
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, "../", "public"))); //definir la carpeta publica
+app.set("view engine", "ejs"); //motor vistas
+app.set("views", path.join(__dirname, "views")); //setear la carpeta de views
+app.use(express.urlencoded({extended:false})); //Enviar y recibir informacion con los metodos http
+app.use(express.json()); //Enviar y recibir informacion con los metodos http
 
 app.use(logger("dev"));
 
