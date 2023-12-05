@@ -4,10 +4,7 @@ const controller = {
   },
   newUser: (req, res) => {
     res.send(req.body);
-    console.log("--v--");
-    console.log(req.body);
-    console.log("--^--");
-    res.redirect("/");
+    fileUpdate("../db/users.json", req.body);
   },
   login: (req, res) => {
     res.render("login");
@@ -16,21 +13,27 @@ const controller = {
 function fileRead(localization) {
   //leer un archivo
   const fs = require("fs");
-  let file = fs.readFileSync(localization, "utf-8");
+  const path = require("path");
+  let route = path.join(__dirname, localization);
+  let file = fs.readFileSync(route, "utf-8");
   file = JSON.parse(file);
   return file;
 }
 
 function fileWrite(localization, content) {
-  //escribir un archivo "../db/users.json"
+  //escribir un archivo
   const fs = require("fs");
-  fs.writeFileSync(localization, content);
+  const path = require("path");
+  let route = path.join(__dirname, localization);
+  fs.writeFileSync(route, content);
 }
 
 function fileUpdate(localization, content) {
   //actualiza un archivo
   const fs = require("fs");
   content = JSON.stringify(content);
-  fs.appendFileSync(localization, content);
+  const path = require("path");
+  let route = path.join(__dirname, localization);
+  fs.appendFileSync(route, content);
 }
 module.exports = controller;
