@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<%- include('./partials/head.ejs', {style:"login", title:"Login"}) %>
+    <%- include('./partials/head.ejs', {style:"register", title:"Register"}) %>
+
+        <body>
+            <%- include('./partials/header.ejs') %>
+                <main>
+                    <div class="div-form">
+                        <form action="/product/register" method="post">
+                            <p class="form">
+                                <label for="product-name" class="label-form">Nombre del Producto</label>
+                                <input type="text" name="product-name" class="input-form">
+                            </p>
+                            <p class="form">
+                                <label for="product-description" class="label-form">Descripcion</label>
+                                <input type="text" name="product-description" class="input-form">
+                            </p>
+                            <p class="form">
+                                <label for="product-price" class="label-form">Precio</label>
+                                <input type="number" name="product-price" class="input-form">
+                            </p>
+                            <p class="form">
+                                <label for="product-discount" class="label-form">Descuento</label>
+                                <input type="number" name="product-discount" class="input-form">
+                            </p>
+                            <p class="form">
+                                <label for="product-img" class="label-form">Subi tu imagen</label>
+                                <input type="file" name="product-img" class="input-form">
+                            </p>
+
+
+                            <p id="form-buttons">
+                                <button type="submit">Crear Publicacion</button>
+                                <button type="reset"><a href="/">Cancelar</a></button>
+                            </p>
+                        </form>
+                    </div>
+                </main>
+
+                <%- include('./partials/footer.ejs') %>
+        </body>
+
+</html>

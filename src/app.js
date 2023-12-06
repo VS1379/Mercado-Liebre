@@ -1,9 +1,9 @@
 const express = require("express");
 const path = require("path");
 const logger = require("morgan");
-const indexRouter = require("./routes/index-router");
-const userRouter = require("./routes/user-router");
-const productRouter = require("./routes/product-router");
+const indexRouter = require("./routes/index.routes");
+const userRouter = require("./routes/user.routes");
+const productRouter = require("./routes/product.routes");
 
 const port = process.env.PORT || 3001;
 const app = express();
