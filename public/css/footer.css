@@ -9,6 +9,7 @@
 footer {
     box-sizing: border-box;
     background-color: white;
+    height: auto;
 }
 
 .footer-page {

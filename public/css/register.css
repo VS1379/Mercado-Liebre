@@ -5,6 +5,14 @@
   width: 100%;
 }
 
+
+main {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+}
+
 form {
   display: flex;
   flex-direction: column;

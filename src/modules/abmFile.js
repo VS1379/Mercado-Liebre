@@ -13,17 +13,16 @@ const file = {
     //escribir un archivo
     const fs = require("fs");
     const path = require("path");
+    content = JSON.stringify(content);
     let route = path.join(__dirname, localization);
     fs.writeFileSync(route, content);
   },
 
   fileUpdate(localization, content) {
     //actualiza un archivo
-    const fs = require("fs");
-    content = JSON.stringify(content);
-    const path = require("path");
-    let route = path.join(__dirname, localization);
-    fs.appendFileSync(route, content);
+    let fileRead = this.fileRead(localization);
+    fileRead.push(content);
+    file.fileWrite(localization, fileRead);
   },
 };
 

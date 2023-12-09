@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--  Head  -->
+<%- include('./partials/head.ejs', {style:"index", title:"Home"}) %>
+
+    <body>
+
+        <!-- Header -->
+        <%- include('./partials/header.ejs') %>
+
+            <main class="products">
+                <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
+                <section class="last-visit">
+                    <h1 class="title">Basado en tu última visita</h1>
+                    <% productos.forEach(product=> { %>
+                        <div class="product">
+                            <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                            <div>
+                                <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                                <p class="price">$<%= product.price%>
+                                </p>
+                                <p class="discount">
+                                    <%= product.discount%>% off
+                                </p>
+                                <p class="product">
+                                    <%= product.name%>
+                                </p>
+                            </div>
+                            <form action="/product/edit/<%= product.id%>" method="get">
+                                <button type="submit">Editar</button>
+                            </form>
+                            <form action="/product/delete/<%= product.id%>?_method=DELETE" method="post">
+                                <button type="submit">Borrar</button>
+                            </form>
+                        </div>
+
+                        <% }) %>
+                </section>
+                <section class="last-visit">
+                    <h1 class="title">Ofertas</h1>
+
+                    <div class="product">
+                        <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                        <div>
+                            <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
+                            <p class="price">$6.770</p>
+                            <p class="discount">40% off</p>
+                            <p class="product">Cafetera Moulinex</p>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+
+            <!--footer-->
+            <%- include('./partials/footer.ejs') %>
+
+    </body>
+
+</html>

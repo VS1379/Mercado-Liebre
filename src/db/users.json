@@ -1,1 +1,42 @@
-{"name-lastname":"asd","username":"sds","email":"HIJK@ASDASD","birthday":"12323-02-13","address":"12dsdad","comprarVender":"comprar","moda":"on","avatar":"","password":["1","1"]}{"name-lastname":"Javier Lopez","username":"javi123","email":"javilopez@gmail.com","birthday":"2000-01-01","address":"Av Belgrano","comprarVender":"vender","electro":"on","moda":"on","hogar":"on","jugueteria":"on","vidaSana":"on","avatar":"","password":["1234","1234"]}
+[
+  {
+    "dni": "44555876",
+    "name-lastname": "Martin",
+    "username": "martk",
+    "email": "martj@hotmail.com",
+    "birthday": "1995-02-13",
+    "address": "Av Belgrano sur 185",
+    "comprarVender": "comprar",
+    "moda": "on",
+    "avatar": "",
+    "password": ["12345", "12345"]
+  },
+  {
+    "dni": "44555123",
+    "name-lastname": "Javier Lopez",
+    "username": "javi123",
+    "email": "javilopez@gmail.com",
+    "birthday": "2000-01-01",
+    "address": "Av Belgrano",
+    "comprarVender": "vender",
+    "electro": "on",
+    "moda": "on",
+    "hogar": "on",
+    "jugueteria": "on",
+    "vidaSana": "on",
+    "avatar": "",
+    "password": ["1234", "1234"]
+  },
+  {
+    "dni": "44555678",
+    "name-lastname": "Juan Pablo",
+    "username": "juanPA",
+    "email": "juanPA@gmail.com",
+    "birthday": "2000-01-01",
+    "address": "Av rivadavia",
+    "comprarVender": "vender",
+    "electro": "on",
+    "avatar": "",
+    "password": ["lol123", "lol123"]
+  }
+]

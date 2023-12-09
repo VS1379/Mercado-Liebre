@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Smartphone Premium",
+    "description": "Teléfono inteligente con cámara de alta resolución.",
+    "price": "1299.99",
+    "discount": "5",
+    "img": "imagen2.jpg",
+    "id": "2"
+  },
+  {
+    "name": "Zapatillas Deportivas",
+    "description": "Zapatillas cómodas y elegantes para actividades deportivas.",
+    "price": "79.99",
+    "discount": "15",
+    "img": "imagen3.jpg",
+    "id": "3"
+  },
+  {
+    "name": "Libro Bestseller",
+    "description": "Novela fascinante que no podrás dejar de leer.",
+    "price": "29.99",
+    "discount": "20",
+    "img": "imagen4.jpg",
+    "id": "4"
+  },
+  {
+    "name": "Set de Herramientas",
+    "description": "Kit completo de herramientas de alta calidad.",
+    "price": "199.99",
+    "discount": "8",
+    "img": "imagen5.jpg",
+    "id": "5"
+  },
+  {
+    "name": "Cafetera Automática",
+    "description": "Prepara café delicioso con esta cafetera moderna.",
+    "price": "129.99",
+    "discount": "12",
+    "img": "imagen6.jpg",
+    "id": "6"
+  },
+  {
+    "name": "Laptop Ultrabook",
+    "description": "Potente laptop para trabajo y entretenimiento.",
+    "price": "899.99",
+    "discount": "10",
+    "img": "",
+    "id": "1"
+  }
+]

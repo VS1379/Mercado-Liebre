@@ -11,7 +11,11 @@
 
             <main>
                 <div class="div-form">
-                    <form action="/user/register" method="POST">
+                    <form action="/user/register" method="POST" class="">
+                        <p class="p-form">
+                            <label for="dni" class="label-form">Dni</label>
+                            <input type="number" name="dni" class="input-form">
+                        </p>
                         <p class="p-form">
                             <label for="name-lastname" class="label-form">Nombre Completo</label>
                             <input type="text" name="name-lastname" class="input-form">
@@ -56,8 +60,7 @@
                         <p class="p-form">
                             <label for="password" class="label-form">Contraseña</label>
                             <input type="password" name="password" class="input-form" placeholder="Ingresar Contraseña">
-                            <input type="password" name="password" class="input-form"
-                                placeholder="Reingresar Contraseña">
+                            <input type="password" name="password" class="input-form" placeholder="Repetir Contraseña">
                         </p>
                         <p id="form-buttons">
                             <button type="submit" id="button-submit">Enviar</button>
