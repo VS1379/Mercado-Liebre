@@ -21,27 +21,10 @@ app.use(logger("dev"));
 app.use("/", indexRouter);
 app.use("/product", productRouter);
 app.use("/user", userRouter);
-app.use((req,res, next)=>{
-  res.status(404).render("not-found")
-})
+app.use((req, res, next) => {
+  res.status(404).render("not-found");
+});
 
 app.listen(port, () => {
   console.log(`server on in http://localhost:${port}`);
 });
-
-const multer = require("multer");
-const storage = multer.diskStorage({
-  //destino en el cual se guarda.
-  destination: function (req, file, cb) {
-    cb(null, "./public/images/avatars");
-  },
-  //nombre con el que se guarda.
-  filename: function (req, file, cb) {
-    cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`);
-  },
-});
-
-const uploadFile = multer({ storage });
-
-//router.post('/register', uploadFile.single('avatar'),
-//usersController.create);

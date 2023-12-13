@@ -12,12 +12,12 @@
         <%- include('./partials/header.ejs') %>
 
             <main class="products">
-                <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
+                <img class="banner" src="/images/resources/img-home-banner.jpg" alt="banner">
                 <section class="last-visit">
                     <h1 class="title">Basado en tu última visita</h1>
                     <% productos.forEach(product=> { %>
                         <div class="product">
-                            <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                            <img src="/images/products/<%= product.img%>" alt="img-cafetera-moulinex" width="300"></img>
                             <div>
                                 <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
                                 <p class="price">$<%= product.price%>
@@ -43,7 +43,7 @@
                     <h1 class="title">Ofertas</h1>
 
                     <div class="product">
-                        <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
+                        <img src="/images/products/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="300"></img>
                         <div>
                             <i id="circle" class="fa-solid fa-truck" style="color: #2ac328;"></i>
                             <p class="price">$6.770</p>

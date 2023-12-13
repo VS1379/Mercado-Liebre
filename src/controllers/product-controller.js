@@ -13,7 +13,7 @@ const controller = {
     req.body.id = uuidv4();
     req.body.name;
     file.fileUpdate("../db/products.json", req.body);
-    res.send(req.body);
+    res.redirect("/product");
   },
   productEdit: (req, res) => {
     let product = file.fileRead("../db/products.json");
