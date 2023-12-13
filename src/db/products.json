@@ -46,5 +46,12 @@
     "discount": "10",
     "img": "",
     "id": "1"
+  },
+  {
+    "name": "Microfono",
+    "description": "Increible Microfono marca tecno",
+    "price": "111",
+    "discount": "0",
+    "id": "4dea18c9-50cc-4575-adee-c8aebe5a5237"
   }
 ]
