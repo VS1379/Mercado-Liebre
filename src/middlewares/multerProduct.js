@@ -7,13 +7,13 @@ const storage = multer.diskStorage({
   },
   //nombre con el que se guarda.
   filename: function (req, file, cb) {
-    let ext = file.originalname.substring(file.originalname.lastIndexOf('.'), file.originalname.length);
+    let ext = file.originalname.substring(
+      file.originalname.lastIndexOf("."),
+      file.originalname.length
+    );
     cb(null, `img-${req.body.name}-${Date.now()}${ext}`);
   },
 });
 
 const uploadFile = multer({ storage });
 module.exports = uploadFile;
-
-//router.post('/register', uploadFile.single('avatar'),
-//usersController.create);

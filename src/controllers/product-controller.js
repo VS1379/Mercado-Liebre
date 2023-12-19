@@ -1,5 +1,6 @@
 const file = require("../modules/abmFile");
 const deleteFile = require("../modules/deleteFile");
+const { validationResult } = require("express-validator");
 const controller = {
   product: (req, res) => {
     let productos = file.fileRead("../db/products.json");
@@ -9,18 +10,26 @@ const controller = {
     res.render("productRegister");
   },
   productAddP: (req, res, next) => {
-    const { v4: uuidv4 } = require("uuid");
-    uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
-    if (!req.file) {
-      const error = new Error("Por Favor Seleccione una imagen");
-      error.httpStatusCode = 400;
-      return next(error);
+    let errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      let oldInfo = req.body;
+      errors = errors.mapped();
+      console.log(errors);
+      res.render("productRegister", { errors, oldInfo });
+    } else {
+      const { v4: uuidv4 } = require("uuid");
+      uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+      if (!req.file) {
+        const error = new Error("Por Favor Seleccione una imagen");
+        error.httpStatusCode = 400;
+        return next(error);
+      }
+      req.body.id = uuidv4();
+      req.body.img = req.file.filename;
+      console.log(req.file);
+      file.fileUpdate("../db/products.json", req.body);
+      res.redirect("/product");
     }
-    req.body.id = uuidv4();
-    req.body.img = req.file.filename;
-    console.log(req.file);
-    file.fileUpdate("../db/products.json", req.body);
-    res.redirect("/product");
   },
   productEdit: (req, res) => {
     let product = file.fileRead("../db/products.json");
